@@ -1,0 +1,193 @@
+/* Reset básico para garantir consistência entre navegadores */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Configuração da largura geral da página */
+body {
+    width: 80%;
+    max-width: 1280px;
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+/* Estilização da Navegação */
+nav {
+    background-color: #1e90ff;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+    padding: 1em 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1em;
+}
+
+nav ul li a {
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5em 1em;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #003366;
+    border-radius: 5px;
+}
+
+/* Estilização da Apresentação */
+header {
+    background: linear-gradient(135deg, #1e90ff, #003366);
+    color: #000000;
+    text-align: center;
+    padding: 4em 1em;
+    margin-top: 60px; /* Ajuste para compensar o menu fixo */
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin: 1em 0;
+    border: 5px solid #fff;
+}
+
+header p {
+    margin: 0.5em 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Estilização das Seções */
+section {
+    margin: 2em 0;
+    padding: 1em;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 2.5em;
+    margin-bottom: 1em;
+    color: #1e90ff;
+    font-family: 'Montserrat', sans-serif;
+}
+
+div.educacao-item, div.certificacao-item, div.experiencia-item {
+    margin-bottom: 1em;
+    padding: 1em;
+    border-left: 5px solid #1e90ff;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+}
+
+div.certificacao-item strong {
+    font-weight: bold;
+}
+
+/* Estilização da Lista de Habilidades */
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    margin: 0.5em 0;
+    padding: 0.5em;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+}
+
+/* Estilização do Rodapé */
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 2em 1em;
+    margin-top: 2em;
+    border-top: 3px solid #1e90ff;
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 1em 0;
+}
+
+footer ul li {
+    display: inline;
+    margin: 0 0.5em;
+}
+
+footer ul li a {
+    color: #1e90ff;
+    text-decoration: none;
+    border: 2px solid #1e90ff;
+    padding: 0.5em;
+    display: inline-block;
+    margin: 0.5em;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+footer ul li a:hover {
+    background-color: #1e90ff;
+    color: #fff;
+}
+
+/* Estilos para dispositivos móveis */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 0.5em 0;
+    }
+
+    nav ul {
+        padding: 0.5em 0;
+    }
+
+    header img {
+        width: 100px;
+        height: 100px;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+}
+
+/* Estilos para dispositivos desktop */
+@media (min-width: 769px) {
+    nav ul li {
+        display: inline;
+    }
+
+    nav ul {
+        text-align: center;
+    }
+
+    header {
+        text-align: left;
+    }
+}
